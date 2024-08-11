@@ -32,7 +32,6 @@ public class EmployeeController {
         return new ResponseEntity<List<Employee>>(employeeService.getAllEmployees(), HttpStatus.FOUND);
 
 
-          // vaishaliwavhale333@gmail.com
     }
 
     @GetMapping("/findEmployeeById/{id}")

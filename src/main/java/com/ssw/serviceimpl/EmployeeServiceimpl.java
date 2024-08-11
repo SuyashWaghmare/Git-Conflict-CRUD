@@ -30,8 +30,6 @@ public class EmployeeServiceimpl implements EmployeeService {
         return employeeRepository.findAll();
     }
 
-//    @Override
-//    public Employee findEmployeeById(int id) {
 
 
     public Employee findEmployeeById(int id) {
@@ -56,7 +54,6 @@ public class EmployeeServiceimpl implements EmployeeService {
             return employeeRepository.save(existing);
         } else {
             return new Employee();
-
         }
 
 
@@ -73,13 +70,6 @@ public class EmployeeServiceimpl implements EmployeeService {
         }
     }
 }
-
-
-
-
-
-
-
 
 
 
