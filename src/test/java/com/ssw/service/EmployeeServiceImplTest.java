@@ -84,15 +84,17 @@ public class EmployeeServiceImplTest {
 
     @Test
     public void testUpdateEmployee() {
-        int id = 1;
-        Employee updatedEmployeeData = Employee.builder()
+        int id = 1;  //
+        Employee updatedEmployeeData = Employee.builder()  //
                 .employeeName("Suyash")
                 .password("newpass1234")
                 .mail("Suyash@example.com")
                 .phone(1234567891L)
                 .address("123 New St")
                 .build();
-        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.of(employee));
+
+
+        Mockito.when(employeeRepository.findById(id)).thenReturn(Optional.of(getEmployee())); //
         Mockito.when(employeeRepository.save(any(Employee.class))).thenReturn(updatedEmployeeData);
         Employee updatedEmployee = employeeService.updateEmployee(updatedEmployeeData, id);
         Assertions.assertNotNull(updatedEmployee);
