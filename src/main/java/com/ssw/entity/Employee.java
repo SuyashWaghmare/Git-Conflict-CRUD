@@ -44,6 +44,11 @@ public class Employee {
     @Column(name = "Address")
     private String address;
 
+    private String nickname;
+
+    private String surname;
+
+
 
 
 
