@@ -49,6 +49,10 @@ public class Employee {
     private String surname;
 
 
+    private String marriatalStatus;
+    private String bloodGroup;
+
+
 
 
 
